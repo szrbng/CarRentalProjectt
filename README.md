@@ -25,23 +25,6 @@ I have been developed this project to improve myself, learn design patterns and 
 </div>
 
 <div id="setup">
-	
-# Setup
-  
-After downloading the files and opening the solution u need to do the required and optional configurations.
-
-- Required
-1. Creating sql tables (You can get sql query from: [.sql](https://github.com/salihyanbal/CarRentalProject/blob/master/GitHub/carrental.sql))
-2. Configure connection string from: DataAccess > Concrete > Ef > [CarRentalContext.cs](https://github.com/salihyanbal/CarRentalProject/blob/master/DataAccess/Concrete/Ef/CarRentalContext.cs) (default configuration for Mssql) 
-- Replace the server name with yours.
-- Optional
-3. Authorization token configurations are held in WebApi > [appsettings.json](https://github.com/salihyanbal/CarRentalProject/blob/master/WebAPI/appsettings.json) > TokenOptions. 
-	- You can change token options as you wish.
-4. Start the project
-</div>
-
-<div id="technologies">
-	
 # Technologies Used
 
 * .NET
