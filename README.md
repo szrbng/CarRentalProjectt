@@ -50,7 +50,7 @@ After downloading the files and opening the solution u need to do the required a
 * Autofac
 * FluentValidation
 * MsSql
-* [Angular for Frontend](https://github.com/salihyanbal/car-rental-ng)
+# * [Angular for Frontend](https://github.com/salihyanbal/car-rental-ng)
 </div>
 
 <div id="techniques">
