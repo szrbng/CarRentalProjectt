@@ -8,7 +8,6 @@
 # Table of Contents
 
 - [**Introduction**](#introduction)
-- [**Setup**](#setup)
 - [**Technologies**](#technologies)
 - [**Techniques**](#techniques)
 - [**Introduction**](#introduction)
