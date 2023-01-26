@@ -43,15 +43,16 @@
 
 
         <!-- Sidebar Start -->
+       
         <div class="sidebar pe-7 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-car"></i> CarRental</h3>
                 </a>
 			
-                <div class="navbar-nav w-100">
-                    <a  asp-action="Index" asp-controller="Home" class="nav-item nav-link active"><i class="fa fa-home me-2"></i>Home</a>
-					<a asp-action="Index" asp-controller="Brand" class="nav-item nav-link"><i class="fa fa-home me-2"></i>Brands</a>
+                <div class="navbar-nav w-100 myDIV" >
+                    <a  asp-action="Index" asp-controller="Home" class="menu nav-item nav-link"><i class="fa fa-home me-2"></i>Home</a>
+					<a asp-action="Index" asp-controller="Brand" class="menu nav-item nav-link"><i class="fa fa-car me-2"></i>Brands</a>
                    @* <a href="" class="nav-item nav-link"><i class="fa fa-calendar me-2"></i>Day-To-Day</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-credit-card me-2"></i>Paid Subscriptions</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-clock me-2"></i>Trial Subscriptions</a>
@@ -65,6 +66,7 @@
                 </div>
             </nav>
           </div>
+        
         </div>
 
          <div class="content">
@@ -126,6 +128,26 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+
+ 
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+
+    
+    <script>
+     const activePage = window.location.pathname;
+const navLink = document.querySelectorAll('nav a').forEach(link => {
+
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+    }
+});
+    
+
+
+      console.log(activePage);
+
+    </script>

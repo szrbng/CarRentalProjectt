@@ -4,6 +4,32 @@
     Layout ="~/Views/Shared/_AdminLayout.cshtml";
 }
 <div class="container mt-5">
+    <button onclick="modalclick()" type="button" class="btn btn-success mb-3"><i class="fa fa-plus"></i> Create Brand</button>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black;font-weight:bold;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black;font-weight:bold;">Create Brand</h5>
+        <button onclick="modalClose()" type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+           <div class="row">
+               <div class="col-md-2">Name : </div>
+                <div class="col-md-10"><input type="text" class="form-control bg-transparent" style="color:black;font-weight:bold;" /></div>
+           </div>
+ 
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button onclick="modalClose()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <table class="table table-bordered table-stripped bg-light justify-content-center" style="color:black;font-weight:bold;">
   <thead>
     <tr>
@@ -30,6 +56,17 @@
   </tbody>
 </table>
 </div>
+
+<script>
+function modalclick() {
+    $('#exampleModalCenter').modal('show');
+}
+
+function modalClose() {
+     $('#exampleModalCenter').modal('hide');
+}
+
+</script>
 
 
 
