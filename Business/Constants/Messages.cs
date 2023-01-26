@@ -22,7 +22,7 @@ namespace Business.Constants
 
         public static string RentalAdded = "Araba kiralandı";
         public static string RentalListed = "Kiralama listelendi";
-        public static string CarUndelivered = "Araba henüz teslim edilmeemiş";
+        public static string CarUndelivered = "Araba henüz teslim edilmemiş";
 
         public static string ImageLimitExpiredForCar = "Bir arabaya maximum 5 fotoğraf eklenebilir";
         public static string InvalidImageExtension = "Geçersiz dosya uzantısı, fotoğraf için kabul edilen uzantılar" + string.Join(",", ValidImageFileTypes);

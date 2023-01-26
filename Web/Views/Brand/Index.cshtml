@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BrandVM>
+@{
+    ViewData["Title"] = "Index";
+    Layout ="~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container mt-5">
+    <table class="table table-bordered table-stripped bg-light justify-content-center" style="color:black;font-weight:bold;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+
+      @foreach(var item in Model)
+        {
+      <tr>
+      
+      <td>@item.Id</td>
+      <td>@item.Name</td>
+      <td>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal_create" style="background-color:orange;">Edit</button> @*| <button class="btn btn-danger" style="background-color:red;">Remove</button>*@
+         
+      </td>
+     
+    </tr>
+        }
+  
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+

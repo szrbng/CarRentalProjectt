@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.Ef
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=CarRentalProject;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=CarRental;Trusted_Connection=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
